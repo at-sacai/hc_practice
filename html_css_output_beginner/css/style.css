@@ -1,0 +1,173 @@
+/*iPhoneおよび共通設定*/
+h2 {
+  display: inline-block;
+  font-size: 34px;
+  padding-bottom: 10px;
+  border-bottom: 1px #000 solid;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0% 4%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.header h1 {
+  background-color: #384053;
+  color: #fff;
+  margin: 9px 25px 0 10px;
+  padding: 8px 22px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 230px;
+}
+
+header ul li {
+  margin-top: 20px;
+}
+
+.main_photo {
+  display: flex;
+  justify-content: center;
+}
+
+.main_photo img {
+  height: 600px;
+  margin-bottom: 90px;
+}
+
+.self-introduction {
+  text-align: center;
+}
+
+.self-introduction h2 {
+  margin-bottom: 55px;
+}
+
+.self-introduction_art .name {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.self-introduction_art .text {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.self-introduction_photo {
+  margin-bottom: 112px;
+}
+
+.self-introduction_photo img {
+  border-radius: 50%;
+}
+
+.profile_photo {
+  text-align: center;
+}
+
+.profile_photo h2 {
+  margin-bottom: 62px;
+}
+
+.profile_photo_art .title {
+  margin-bottom: 20px;
+}
+
+.profile_photo_art .text {
+  margin-bottom: 14px;
+}
+
+.profile_img {
+  margin-bottom: 22px;
+}
+
+.profile_img img {
+  width: 100%;
+}
+
+footer {
+  margin: 106px 0 10px;
+  text-align: center;
+}
+
+/*iPadの設定*/
+@media screen and (min-width: 600px) {
+  .container {
+    width: 960px;
+  }
+
+  .main_photo img {
+    margin: 0 calc(50% - 50vw) 90px;
+    width: 100vw;
+  }
+
+  .self-introduction_art {
+    display: grid;
+    grid-template-columns: 600px 150px;
+    width: 750px;
+    margin: 0 auto 110px;
+  }
+
+  .self-introduction_art .name {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    margin: 0;
+  }
+
+  .self-introduction_art .text {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .self-introduction_photo {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+
+  .profile_photo h2 {
+    margin-bottom: 62px;
+  }
+
+  .profile_photo_arts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile_photo_art {
+    margin: 0 15px 0 0;
+  }
+
+  .profile_photo_art .title {
+    margin-bottom: 15px;
+  }
+
+  .profile_photo_art .text {
+    margin-bottom: 15px;
+  }
+
+  .profile_img {
+    margin-bottom: 0;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
