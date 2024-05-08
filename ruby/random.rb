@@ -1,10 +1,6 @@
 arr = ["A", "B", "C", "D", "E", "F"].shuffle!
-num = rand(2)
+num = rand(3..4)
 
-if num == 0
-  result = arr.each_slice(3).to_a
-elsif num == 1
-  result = arr.each_slice(4).to_a
-end
+result = arr.each_slice(num).to_a
 
 p result[0], result[1]
