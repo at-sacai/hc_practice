@@ -1,3 +1,6 @@
 [submodule "ruby/vending_machine"]
 	path = ruby/vending_machine
 	url = https://github.com/at-sacai/vending_machine.git
+[submodule "ruby/pokemon"]
+	path = ruby/pokemon
+	url = https://github.com/at-sacai/pokemon.git
